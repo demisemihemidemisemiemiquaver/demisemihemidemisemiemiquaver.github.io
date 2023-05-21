@@ -1,0 +1,88 @@
+body {
+    color:#ce2761;
+    background-color:#f1e3d8
+  
+  }
+  
+  body {
+        font-family:"Georgia",
+        Serif;
+        font-size: 1em;
+  }
+  
+  h1 {
+    font-family:"Georgia",
+    serif;
+    font-size: 3em;
+  }
+  
+  h2 {
+    font-family:"Georgia",
+    Serif;
+    font-size: 2.5em;
+  }
+  
+  h3 {
+    font-family:"Georgia",
+    Serif;
+    font-size: 2em;
+  }
+  
+  h4 {
+    font-family:"Georgia",
+    Serif;
+    font-size: 1.5em;
+  }
+  
+  h5 {
+    font-family:"Georgia",
+    Serif;
+    font-size: 1.25em;
+  }
+  
+  h6{
+    font-family:"Georgia",
+    Serif;
+    font-size: 1.15em;
+  }
+  
+  ul.navbar {
+    width: 25em
+  }
+  
+  ul.navbar li{ background: white;
+     margin: 0.5em 5;
+     padding: 0.3em;
+     border-right: 1em solid #ce2761;
+   }
+  
+  ul.navbar a {
+    text-decoration: none;
+  }
+  
+  a:link {
+    color: #d98047;
+  }
+  
+  a:visited {
+    color: #e1b496;
+  }
+  table {
+    border-collapse: collapse;
+    width: 25em;
+  }
+  
+  td, th {
+    border: 1px solid #ce2761;
+    text-align: left;
+    padding: 5px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: white;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #fce1ea;
+  }
+  
