@@ -13,12 +13,54 @@ section {
   padding: 100px 20vw;
 }
 
+form {
+  background: #202731;
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+form h1 {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 20px;
+  align-self: center;
+}
+
+form input, form textarea {
+  font-family: 'Open Sans', sans-serif;
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  background-color: aliceblue;
+  font-size: 16px;
+}
+
+form button {
+  padding: 15px;
+  background: #baa5d9;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  align-self: center;
+  margin: 20px auto 0;
+  border-radius: 30px;
+}
+
 .pink {
-  background-color: #a64968
+  background-color: #a64968;
 }
 
 .lilac {
-  background-color: #baa5d9;;
+  background-color: #baa5d9;
 }
 
 .wave {
@@ -63,7 +105,7 @@ section {
 }
 
 a:link {
-  color: white;
+  color: #baa5d9;
   background-color: transparent;
   text-decoration: none;
 }
@@ -83,4 +125,12 @@ a:active {
   color: white;
   background-color: transparent;
   text-decoration: underline;
+}
+
+.contact {
+  width: 100%;
+  background: #baa5d9;
+  display: flex;
+  align-items:center;
+  justify-content: center;
 }
