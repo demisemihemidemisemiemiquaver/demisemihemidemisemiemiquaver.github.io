@@ -3,132 +3,35 @@ body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   color: white;
-  background: #102440;
+  background-image: url(images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+  align-items: center;
 }
 section {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 400px;
-  padding: 100px 20vw;
-}
-
-form {
-  background: #102440;
-  display: flex;
-  flex-direction: column;
-  padding: 2vw 4vw;
-  width: 90%;
-  max-width: 600px;
-  border-radius: 50px;
-  margin-top: 15%;
-}
-
-form h1 {
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-  margin-bottom: 20px;
-  align-self: center;
-}
-
-form input, form textarea {
-  font-family: 'Open Sans', sans-serif;
-  border: 0;
-  margin: 10px 0;
-  padding: 20px;
-  outline: none;
-  background-color: aliceblue;
-  font-size: 16px;
-}
-
-form button {
-  padding: 15px;
-  background: #baa5d9;
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
-  border: 0;
-  outline: none;
-  cursor: pointer;
-  width: 150px;
-  align-self: center;
-  margin: 20px auto 0;
-  border-radius: 30px;
-}
-
-.pink {
-  background-color: #a64968;
-}
-
-.lilac {
-  background-color: #baa5d9;
-}
-
-.darkblue {
-  background-color: #122a5c;
-}
-
-.wave {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.wave svg {
-  position: relative;
-  display: block;
-  width: calc(103% + 1.3px);
-  height: 203px;
-}
-
-.wave .shape-fill {
-  fill: #102440;
-}
-
-.wave2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.wave2 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 144px;
-}
-
-.wave2 .shape-fill {
-  fill: #102440;
+  min-height: 150px;
+  padding: 75px 20vw;
 }
 
 a:link {
-  color: #baa5d9;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:visited {
-  color:#baa5d9;
+  color: white;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:hover {
-  color: white;
+  color: #8688b1;
   background-color: transparent;
 }
 
 a:active {
-  color: white;
+  color: #8688b1;
   background-color: transparent;
   text-decoration: underline;
 }
@@ -139,4 +42,89 @@ a:active {
   display: flex;
   align-items:center;
   justify-content: center;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ACADCA;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a, .dropdown-content a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.dropdown-content a {
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+.active {
+  background-color: inherit;
+  color: white;
+}
+
+.sidenav a:hover, .dropbtn:hover {
+  color: #8688b1;
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+.dropbtn {
+  background-color: inherit;
+  color: white;
+  padding: 8px 8px 8px 32px;
+  font-size: 25px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: inherit;
+  min-width: 160px;
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
