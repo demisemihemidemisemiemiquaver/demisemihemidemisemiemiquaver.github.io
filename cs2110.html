@@ -12,6 +12,35 @@
     <link rel="shortcut icon" type="image/png" href="images/konami.png"/>
     <link rel="stylesheet" href="style.css">
 
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="index.html">About</a>
+        <a href="index.html">Contact</a>
+        <div class="dropdown">
+            <button class="dropbtn">Coursework</button>
+            <div class="dropdown-content">
+              <a href="cs1332.html">Data Structures and Algorithms</a>
+              <a href="cs2110.html">Computer Organization and Programming</a>
+              <a href="cs4641.html">Machine Learning</a>
+            </div>
+          </div>
+      </div>
+
+      <span style="font-size:50px;cursor:pointer;color:azure" onclick="openNav()">&#9776;</span>
+
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
+
     <title>CS 2110: Computer Organization and Programming</title>
 </head>
 
@@ -19,10 +48,6 @@
     <section> 
         <h1>CS 2110</h1>
         <p>Computer Organization and Programming</p>
-    </section>
-
-    <section>
-        <a href="index.html"> Back to Home</a>
     </section>
     
 </body>
